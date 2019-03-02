@@ -81,3 +81,19 @@ this will include everyfile in the folder to staging
 `git commit -m "Initial commit"`
 this will commit the files in staging to the reporstory
 the -m followed by a string wil aded a short descprtion to this commit.
+
+## check your commit
+`git log`
+this will check the descprition of your each commit
+
+wanna see how the commit change? type:
+`git log -p`
+
+wanna quick exam all the descriptions? type:
+`git log --oneline`
+
+## check what changes has been made
+if you made some change and save the file, and save it. use
+`git diff` to see what you have changed
+
+if you commit your file, you can also use `git log -p`
