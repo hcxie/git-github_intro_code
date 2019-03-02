@@ -31,6 +31,9 @@ git config --global core.editor "atom --wait"
 2. make directory `mkdir` `mkdir -p udacity-git-course/new-git-project && cd $_`
 3. change folder `cd`
 4. remove folder or directory `rm`
+5. quit from current descrition `q`
+    for example, you use `git log -p`, it gives you a list of all the changes,
+    you want to quit, just type `q`
 
 ## create a repostroy on the local machine
 create a folder to store the repostory
@@ -77,10 +80,32 @@ Changes to be committed:
 you can also use `git add .`
 this will include everyfile in the folder to staging
 
+## ingore files
+if you use `git add .`, you may put everything in folder to staging, if you do
+not want certrain files to staging, you can create a _.gitignore_ file in folder
+(the same directory that the hidden .git directory is located).
+
+Globbing lets you use special characters to match patterns/characters.
+In the .gitignore file, you can use the following:
+
+blank lines can be used for spacing
+``#`` - marks line as a comment
+``*`` - matches 0 or more characters
+        for example: `samples/*.jpg` every .jpg file in samples folder will not
+        be committed
+``?`` - matches 1 character
+        for example: `"be?rs"` bears, beers will all be ingored
+``[abc]`` - matches a, b, _or_ c
+``**`` - matches nested directories
+      for example `a/**/z` matches a/z or a/b/z or a/b/c/z
+
 ## commit file
 `git commit -m "Initial commit"`
 this will commit the files in staging to the reporstory
 the -m followed by a string wil aded a short descprtion to this commit.
+
+if you just type `git commit`, it will open the bonded text editor, you can
+put description in there
 
 ## check your commit
 `git log`
