@@ -109,6 +109,12 @@ Changes to be committed:
 you can also use `git add .`
 this will include everyfile in the folder to staging
 
+`git add -A` stages all changes
+
+`git add .` stages new files and modifications, without deletions
+
+`git add -u` stages modifications and deletions, without new files
+
 ## ingore files
 if you use `git add .`, you may put everything in folder to staging, if you do
 not want certrain files to staging, you can create a _.gitignore_ file in folder
