@@ -16,6 +16,12 @@
    - [add/delete tag](#adddelete-tag)   
    - [branch](#branch)   
       - [create a branch](#create-a-branch)   
+      - [switch to a branch](#switch-to-a-branch)   
+      - [deleter a branch](#deleter-a-branch)   
+      - [merge branch](#merge-branch)   
+   - [modify branch](#modify-branch)   
+      - [midifying the last commit](#midifying-the-last-commit)   
+      - [reverting a commit](#reverting-a-commit)   
 
 <!-- /MDTOC -->
 
@@ -166,3 +172,24 @@ this will add  an annotated flag named v1.0. you can put descprtion in this tag
 `git branch sidebar`
 after you create this branch, the command prompt still in master. We need to
 switch to it if we want
+
+`git branch alt-sidebar-loc 42a69f`
+create a branch called alt-siderbar-loc and has it commit to point to 42a69f
+
+### switch to a branch
+`git checkout sidebar`
+
+###  deleter a branch
+`git branch -d sidebar`
+
+### merge branch
+`git merge sidebar`
+
+## modify branch
+### midifying the last commit
+edit, save and stage the file and type:
+`git commit --amend`
+
+### reverting a commit
+`git revert <SHA-of-commit-to-revert>`
+so you can revert what you did in a commit
