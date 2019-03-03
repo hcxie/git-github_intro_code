@@ -1,6 +1,26 @@
+<!-- MDTOC maxdepth:6 firsth1:1 numbering:0 flatten:0 bullets:1 updateOnSave:1 -->
+
+- [quick introduction to use github and github](#quick-introduction-to-use-github-and-github)   
+   - [install and initialization](#install-and-initialization)   
+   - [some common commands in shell:](#some-common-commands-in-shell)   
+   - [create a repostroy on the local machine](#create-a-repostroy-on-the-local-machine)   
+   - [create a repostory on github and clone it to local machine](#create-a-repostory-on-github-and-clone-it-to-local-machine)   
+   - [check status](#check-status)   
+   - [add file to staging index](#add-file-to-staging-index)   
+   - [ingore files](#ingore-files)   
+   - [commit file](#commit-file)   
+   - [check your commit](#check-your-commit)   
+   - [check what changes has been made](#check-what-changes-has-been-made)   
+   - [add/delete tag](#adddelete-tag)   
+   - [branch](#branch)   
+      - [create a branch](#create-a-branch)   
+
+<!-- /MDTOC -->
+
 # quick introduction to use github and github
 this repostory contains some basic git commands and tutorials to get things to work. Just in case, in future, if I forgot everything, I can always come back here to pick it up.
-## git install and initialization
+
+## install and initialization
 
 1. go to https://git-scm.com/downloads
 download the software for Windows
@@ -22,7 +42,7 @@ git config --global merge.conflictstyle diff3
 
 git config --list
 
-#use atom as editor
+# use atom as editor
 git config --global core.editor "atom --wait"
 ```
 
@@ -122,3 +142,16 @@ if you made some change and save the file, and save it. use
 `git diff` to see what you have changed
 
 if you commit your file, you can also use `git log -p`
+
+## add/delete tag
+`git tag -a v1.0`
+this will add  an annotated flag named v1.0. you can put descprtion in this tag
+
+`git tag -d v1.0`
+
+
+## branch
+### create a branch
+`git branch sidebar`
+after you create this branch, the command prompt still in master. We need to
+switch to it if we want
