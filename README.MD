@@ -11,6 +11,8 @@
    - [commit file](#commit-file)   
    - [check your commit](#check-your-commit)   
    - [check what changes has been made](#check-what-changes-has-been-made)   
+   - [add remote github](#add-remote-github)   
+   - [upload your commit to github](#upload-your-commit-to-github)   
    - [add/delete tag](#adddelete-tag)   
    - [branch](#branch)   
       - [create a branch](#create-a-branch)   
@@ -142,6 +144,15 @@ if you made some change and save the file, and save it. use
 `git diff` to see what you have changed
 
 if you commit your file, you can also use `git log -p`
+
+## add remote github
+`git remote add origin https://github.com/jbdx6307/git-github_intro_code.git`
+now this link is named origin
+
+## upload your commit to github
+`git push -u origin master`
+upload everything in your master branch to github-origin(code name with the
+  repostory describe by the link above)
 
 ## add/delete tag
 `git tag -a v1.0`
