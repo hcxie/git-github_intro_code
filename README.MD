@@ -22,6 +22,7 @@
    - [modify branch](#modify-branch)   
       - [midifying the last commit](#midifying-the-last-commit)   
       - [reverting a commit](#reverting-a-commit)   
+   - [hold](#hold)   
 
 <!-- /MDTOC -->
 
@@ -193,3 +194,5 @@ edit, save and stage the file and type:
 ### reverting a commit
 `git revert <SHA-of-commit-to-revert>`
 so you can revert what you did in a commit
+
+##  hold
